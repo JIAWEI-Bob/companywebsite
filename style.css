@@ -1,0 +1,266 @@
+/* 基本重設 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #334455;
+    line-height: 1.6;
+
+}
+
+/* 導覽列 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    border-bottom: 2px solid #f0f4f8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1a3a5f;
+}
+
+.tag {
+    font-size: 0.9rem;
+    background: #3498db;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #556677;
+    font-weight: 500;
+}
+
+.hero {
+    padding: 100px 8%;
+    background: linear-gradient(rgba(10, 20, 30, 0.7), rgba(10, 20, 30, 0.7)), url('Gemini_Generated_Image_92cgu392cgu392cg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* 捲動時背景固定，會有高級感 */
+    color: white;
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.hero h1 {
+    /* font-size: 2.5rem; */
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* 服務卡片 */
+.services {
+    padding: 72px 8%;
+    /* background: #f8fbff; */
+    background-color: #152368;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 48px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    flex: 1 1 300px;
+    background: #ffffff;
+    color: #010e1b;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(52, 152, 219, 0.2);
+    transition: all 0.4s ease;
+}
+
+/* 表單樣式 */
+.contact {
+    padding: 60px 8%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d9e0;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d9e0;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.security-note {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #1a3a5f;
+    color: white;
+}
+
+/* 聯絡區塊卡片化 */
+.contact-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #0a0e14;
+}
+
+.google-form-btn {
+    display: inline-block;
+    background: #27ae60;
+    /* 專業的綠色，代表安全與核准 */
+    color: white;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.google-form-btn:hover {
+    background: #219150;
+    transform: scale(1.05);
+    /* 滑鼠移上去稍微變大 */
+}
+
+.security-note {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* 解決跳轉時標題被導覽列遮擋的問題 */
+section {
+    /* 這裡的數值建議設定得比導覽列高度多一點，例如導覽列是 80px，我們設 100px */
+    scroll-margin-top: 100px;
+}
+
+/* 增加上下內距，讓標題與內容有更多空間 */
+.services {
+    padding: 100px 8% 60px 8%;
+    /* 增加上方的 Padding */
+}
+
+/* 1. 定義科技感動畫：浮動效果 */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* 2. 升級服務卡片：加入霓虹邊框與動畫 */
+.service-card {
+    border: 1px solid rgba(52, 152, 219, 0.2);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    /* 毛玻璃效果，2026年主流 */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover {
+    border-color: #3498db;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.4);
+    /* 霓虹發光 */
+    transform: scale(1.05) translateY(-5px);
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
